@@ -83,13 +83,22 @@ $message = get_message();
                                 <h3><?php echo htmlspecialchars($item['name']); ?></h3>
                                 <p class="item-price"><?php echo format_price($item['price']); ?> each</p>
                                 <form action="php/cart-handler.php" method="POST" class="quantity-form">
+                                <input type="hidden" name="cart_id" value="<?php echo $item['id']; ?>">
+                                <input type="hidden" name="update_cart" value="1">
+                                <div class="quantity-control">
+                                    <label>Quantity:</label>
+                                    <input type="number" name="quantity" value="<?php echo $item['quantity']; ?>" min="1" max="<?php echo $item['stock']; ?>">
+                                    <button type="submit" class="btn-sm">Update</button>
+                                </div>
+                                </form>
+                                <!-- <form action="php/cart-handler.php" method="POST" class="quantity-form">
                                     <input type="hidden" name="cart_id" value="<?php echo $item['id']; ?>">
                                     <div class="quantity-control">
                                         <label>Quantity:</label>
                                         <input type="number" name="quantity" value="<?php echo $item['quantity']; ?>" min="1" max="<?php echo $item['stock']; ?>">
                                         <button type="submit" name="update_cart" class="btn-sm">Update</button>
                                     </div>
-                                </form>
+                                </form> -->
                             </div>
                             <div class="cart-item-total">
                                 <p class="item-subtotal"><?php echo format_price($item['price'] * $item['quantity']); ?></p>

@@ -3,10 +3,6 @@
  * ShopEase - Database Configuration
  * Contains database connection settings and initialization
  */
-// Session configuration
-ini_set('session.save_handler', 'files');
-ini_set('session.save_path', sys_get_temp_dir());
-session_start();
 
 // Database credentials
 define('DB_HOST', 'localhost:3307');
