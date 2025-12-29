@@ -98,17 +98,14 @@ if (isset($_POST['admin_login'])) {
         if (password_verify($password, $admin['password'])) {
             $_SESSION['admin_id'] = $admin['id'];
             $_SESSION['admin_username'] = $admin['username'];
-            header("Location: ../admin/index.php");
-            exit();
+            redirect('../admin/index.php');
         } else {
             show_message('Invalid username or password', 'error');
-            header("Location: ../admin/login.php");
-            exit();
+            redirect('../admin/login.php');
         }
     } else {
         show_message('Invalid username or password', 'error');
-        header("Location: ../admin/login.php");
-        exit();
+        redirect('../admin/login.php');
     }
 }
 ?>

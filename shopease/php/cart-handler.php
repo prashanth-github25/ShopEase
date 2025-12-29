@@ -1,4 +1,5 @@
 <?php
+
 /**
  * ShopEase - Cart Handler
  * Handles add to cart, update quantity, and remove from cart
