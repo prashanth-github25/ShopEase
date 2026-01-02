@@ -1,0 +1,395 @@
+/* ShopEase - Admin Panel Stylesheet */
+
+.admin-body {
+    display: flex;
+    min-height: 100vh;
+    background: #F5F7FA;
+}
+
+/* ========== ADMIN LOGIN ========== */
+.admin-login-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1E88E5, #1976D2);
+}
+
+.admin-login-box {
+    max-width: 450px;
+    width: 100%;
+    background: #fff;
+    padding: 3rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+}
+
+.admin-login-box h1 {
+    color: #1E88E5;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+}
+
+.admin-login-box h2 {
+    text-align: center;
+    color: #666;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.admin-footer {
+    text-align: center;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #E0E0E0;
+}
+
+.admin-footer a {
+    color: #1E88E5;
+    font-weight: 500;
+}
+
+/* ========== ADMIN SIDEBAR ========== */
+.admin-sidebar {
+    width: 260px;
+    background: #2C3E50;
+    color: #fff;
+    padding: 2rem 0;
+    position: fixed;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.admin-logo {
+    padding: 0 1.5rem 2rem;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    margin-bottom: 2rem;
+}
+
+.admin-logo h2 {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.admin-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-nav a {
+    padding: 1rem 1.5rem;
+    color: rgba(255,255,255,0.8);
+    transition: all 0.3s;
+    font-weight: 500;
+    border-left: 3px solid transparent;
+}
+
+.admin-nav a:hover,
+.admin-nav a.active {
+    background: rgba(255,255,255,0.1);
+    color: #fff;
+    border-left-color: #1E88E5;
+}
+
+/* ========== ADMIN CONTENT ========== */
+.admin-content {
+    flex: 1;
+    margin-left: 260px;
+    padding: 2rem;
+}
+
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.admin-header h1 {
+    font-size: 2rem;
+    color: #2C3E50;
+}
+
+.admin-header p {
+    color: #666;
+    margin-top: 0.25rem;
+}
+
+/* ========== STATISTICS CARDS ========== */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.stat-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    transition: transform 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.stat-icon {
+    font-size: 3rem;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #E3F2FD, #BBDEFB);
+    border-radius: 12px;
+}
+
+.stat-info h3 {
+    font-size: 2rem;
+    color: #1E88E5;
+    margin-bottom: 0.25rem;
+}
+
+.stat-info p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* ========== ADMIN SECTION ========== */
+.admin-section {
+    background: #fff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.section-header h2 {
+    color: #2C3E50;
+}
+
+/* ========== ADMIN TABLE ========== */
+.admin-table {
+    overflow-x: auto;
+}
+
+.admin-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-table th,
+.admin-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.admin-table th {
+    background: #F5F7FA;
+    font-weight: 600;
+    color: #2C3E50;
+}
+
+.admin-table tbody tr:hover {
+    background: #F5F7FA;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.btn-edit {
+    background: #1E88E5;
+    color: #fff;
+}
+
+.btn-edit:hover {
+    background: #1976D2;
+}
+
+.btn-delete {
+    background: #F44336;
+    color: #fff;
+}
+
+.btn-delete:hover {
+    background: #D32F2F;
+}
+
+/* ========== ADMIN FORM ========== */
+.admin-form {
+    max-width: 800px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: auto;
+    cursor: pointer;
+}
+
+/* ========== ORDER CARDS ========== */
+.admin-order-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+}
+
+.order-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    background: #F5F7FA;
+}
+
+.order-card-header h3 {
+    color: #2C3E50;
+    margin-bottom: 0.5rem;
+}
+
+.order-customer {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.order-date {
+    color: #999;
+    font-size: 0.9rem;
+}
+
+.order-status-update select {
+    padding: 0.5rem 1rem;
+    border: 2px solid #E0E0E0;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    font-weight: 500;
+    color: #2C3E50;
+    transition: border-color 0.3s;
+}
+
+.order-status-update select:focus {
+    outline: none;
+    border-color: #1E88E5;
+}
+
+.order-items-list {
+    padding: 1.5rem 2rem;
+}
+
+.order-items-list h4 {
+    color: #2C3E50;
+    margin-bottom: 1rem;
+}
+
+.order-items-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.order-items-table th,
+.order-items-table td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.order-items-table th {
+    background: #F5F7FA;
+    font-weight: 600;
+    color: #2C3E50;
+}
+
+.order-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 1.5rem 2rem;
+    background: #F5F7FA;
+}
+
+.shipping-details {
+    flex: 1;
+}
+
+.shipping-details strong {
+    color: #2C3E50;
+}
+
+.shipping-details p {
+    color: #666;
+    margin-top: 0.5rem;
+}
+
+.order-total-amount {
+    text-align: right;
+}
+
+.order-total-amount strong {
+    color: #2C3E50;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+    .admin-sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .admin-content {
+        margin-left: 0;
+    }
+
+    .admin-nav {
+        flex-direction: row;
+        overflow-x: auto;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .order-card-header,
+    .order-card-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+    }
+}
